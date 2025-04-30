@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e88e5">
+    <meta name="description" content="Sudoku">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="nav">
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="font-size: 150%;"></i>
+        </div>
+        <div class="menu-overlay">
+            <div class="menu-bar">
+                <div class="wrapper">
+                    <div class="score">
+                    <div class="score" id="s1">
+                        <div class="score" id="s2"></div>
+                    </div>
+                </div></div>
+                <div class="back">Go Back To Home!</div>
+                <div class="mode">dark Mode</div>
+            </div>
+        </div>
+        <div class="name" style="font-size:2rem">Sudoku</div>
+    </div>
+
+    <div class="box">
+        <div class="cta" id="ans" onclick="openOverlay(ans)">
+            Get A Solution!!
+        </div>
+        <div class="cta" id="play" onclick="openOverlay(play)">
+            Play Sudoku!
+        </div>
+    </div>
+
+    <div class="overlay">
+        <p style="height: 5vh; font-size: 2rem;">Fill all boxes to submit</p>
+        <div class="board">
+
+        </div>
+        <button class="cta" id="cta1">Submit</button>
+    </div>
+
+
+
+
+
+    
+ <script src="script.js"></script>   
+</body>
+</html>
